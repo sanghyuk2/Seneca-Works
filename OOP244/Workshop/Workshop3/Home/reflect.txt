@@ -1,0 +1,28 @@
+/**********************************************************
+* Name: SangHyuk Lee
+* Student ID: 129405171
+* Seneca email: slee395@myseneca.ca
+* Date of Completion: 6/4/2018
+**********************************************************/
+1) How many elements are there in each C-style character string that stores a family or given name for the account? Why?
+
+I allocate a memory to family and givenname 40 as max_name_length respectively except for the null terminator.
+To distinguish between the number of characters that can be filled out and null terminator, I write '+1' later.
+
+2) Your class declares two member functions named set(...). In C, this would generate an error. Name the feature of C++ that allows this.
+
+This is about overloading fuction. In C, the compiler find the function only based on the function name, wheras In C++, the compiler check its parameter type and matched number as well. Therefore, if we try the code in C in a way of C++, It generates the error.
+
+3) What have you learned during this workshop?
+
+What I learned most and impressive is as professor told me after the lab class, to get an even number, we don't need a lot of function to get it. At first, I was struggling with getting even number, but after I searched and reminded prof's words, I realize that what I need is just using the remainder operator by dividing number as 2. When I learned C language in the past, I remember that i used it before but there has had no chance to use it. I could learn it once again through this lesson in the moment that i was about to forget from memory.
+
+Quiz 3 Reflection
+Q1.use dot(.) with object to combine with member function to access the instant variables. In the member function, we can pass the information we want by using 'this' which returns the address of the current object.
+
+Q3.It happens when we use an array because when we assign a memory with keyword 'new', It will return the first element's address. Therefore if we do not use '[]' after delete, the compiler does not notice it is array or not.
+For example, 
+int arr*;
+arr = new int [size of the array];
+// ...
+delete[] arr;
