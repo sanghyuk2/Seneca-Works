@@ -1,0 +1,36 @@
+/**********************************************************
+* Name: SangHyuk Lee
+* Student ID: 129405171
+* Seneca email: slee395@myseneca.ca
+* Date of Completion: 7/23/2018
+**********************************************************/
+1. What is the difference between an abstract base class and a concrete class?
+Abstract base class contains or inherits at least one pure virtual member function without any implementations. We can say it defines an interface.
+However, a concrete class is a derived class, which is also known as child class, that implements that interface.
+
+2. Identify the functions that shadow functions of the same name in your solution?
+The debit and credit functions in ChequingAccount.cpp shadow the debit and credit functions in Account.cpp.
+
+3. Explain what have you learned in this workshop.
+What I have learned most is althought the derived class does not inherits a constructor in base class, we still can use it.
+At first, i couldn't understand because there is an instruction that we cannot inherits a special function such as constructor, destructor.
+But now i understand what is different between inheriting somthing and using something.
+
+
+<Quiz 2 reflection>
+What does the virtual keyword do in C++? Give an example a virtual function.
+If this keyword is present, the compiler inserts code that binds the call to most derived version of the member function based on the dynamic type.
+ex) class Example {
+~~
+public:
+virtual void display(std::ostream&) const;
+}
+
+What is an abstract base class? Describe it and give an example of one.
+Abstract base class is the class which inherits at least one pure virtual member function without any implementations.
+Additionally, the abstract base class cannot be declared as an object. It is only for interface and we implements the interface through concrete class.
+
+class Ex {
+   public:
+     virtual void display(std::ostream&) const = 0; 
+ };
