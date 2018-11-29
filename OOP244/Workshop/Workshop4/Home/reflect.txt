@@ -1,0 +1,43 @@
+/**********************************************************
+* Name: SangHyuk Lee
+* Student ID: 129405171
+* Seneca email: slee395@myseneca.ca
+* Date of Completion: 6/12/2018
+**********************************************************/
+1) What is a safe empty state? Could you define another state as a the safe empty state?
+
+Safe empty state: If the object has well - defined states from the time of its creation  and does execute what the user want without crushing or breaking, we can say the object is in a safe empty state. Additionally, all objects in a same class has same safe empty state. It is possible to define another states as the safe empty state as long as we define another value in the code.
+
+2) Describe how you have minimized code duplication.
+
+By using the function call, I did not need to write the code again that we made.
+It makes my code more simple and readable.
+
+3) Explain why the canTravelWith(...) member function can access the private data of the object referenced in its parameter.
+
+This is because the member function in the definition itself can access the private member variables of the class based on encapsulation by providing a communication link between the client code and the object of the class. This function is well defined to show the users the role of the member function.
+
+4) What statement do you need to add to ensure that the strncpy(...) function executes correctly.
+
+For example in my code, 
+strncpy(Passenger_name, name, 32);
+Passenger_name[31] = '\0';
+
+‘\0’ is essential to avoid the error because if the string is shorter than what I limited, the strncpy will copy the string with null terminator, but when we copy string more than limit, it copies without null terminator. Therefore, we need to put null terminator at the 31th element.
+
+
+5) Explain what you have learned in this workshop.
+what I learned is the role of the constructor and destructor which is usually used to initialize as a safe empty state at the first to prevent code from breaking and deallocate memory to prevent memory leaking. 
+
+Quiz 4 Reflection
+In one or two sentences, explain what free helper functions are.
+A free or loosely coupled helper function is a function that obtains all of its information from the public member functions of the class that it supports.
+
+Based on the number of operands, the C++ operators can be classified into 3 categories. Name those categories and give examples of operators in each category.
+unary, binary, ternary
+    unary  - Type& operator++()  or  Type& operator--()
+    binary(+ - * / %) … - Student& operator+=(float g);
+    ternary - conditional operator, (condition) ? :
+    
+Explain what is the purpose of a destructor in a C++ class.
+The reason why we use destructor is to deallocate memory for each instance variable to prevent memory leaking.
