@@ -1,0 +1,37 @@
+/**********************************************************
+* Name: SangHyuk Lee
+* Student ID: 129405171
+* Seneca email: slee395@myseneca.ca
+* Date of Completion: 5/28/2018
+**********************************************************/
+
+1) Why do you need to allocate new dynamic memory when you increase the size of an existing array of dynamically allocated memory?
+
+Because the original memory has a limit that we made as a "count", to accept a more elements in it, we need to  allocate new dynamic memory and copy the elements from original memory to newly allocated one. 
+After that, by copying the address of the newly allocated array into the original one, we can resize the original one.
+
+2) The Kingdom structure stores the name of the kingdom in an array of characters. At the end of the program, we do not use the delete operator to deallocate the memory occupied by the name.
+Why don’t we need to use the delete operator on this array itself? Explain.
+
+The member in a Kingdom structure is what we have defined as a static memory which lifetime is limited based on a entire program. The name of the kingdom's memory will be automatically returned into the operating system. 
+It is different from the dynamic memory which we can assign memory as much as we want, but is needed to be deleted because of the memory leak.
+
+3)There are two display(...) function definitions. How does the compiler know which definition to call from your main function.
+
+The compiler automatically compile the code based on the matched number of arguments in function call with parameter in  function header. 
+For example, in this workshop2, one of the display functions consists of one parameter, whereas another one consists one parameter. 
+Therefore, the compiler check how many arguments do function call have and then compile the code based on the matched number of parameter and arguments.
+
+4)Explain what have you have learned in this workshop.
+What I have learned most is about dynamic memory. In brief explanation, It has the advantage of being able to allocate memory efficiently more than static memory. 
+If you allocate and do not use the memory sufficiently, then the unused memory is wasted, but for dynamic memory, It can be more efficient in terms of memory allocation given only the desired number of allocations.
+
+
+Quiz 1 Reflection.
+Preprocessor - interprets all directives creating a single translation unit for the comliler.
+Compiler - compiles each translation unit separately and creates a corresponding binary version.
+Linker - assembles the various binary units along with the system binaries to create one complete executable binary.
+
+Quiz 2 Reflection.
+The reason why we use the keyword privacy is to limit accessibility to any member who can change the value of a data member. Differ from the keyword privacy, the public is used to make members as accessible to any member.
+
