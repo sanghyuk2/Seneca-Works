@@ -1,0 +1,18 @@
+/**********************************************************
+* Name: SangHyuk Lee
+* Student ID: 129405171
+* Seneca email: slee395@myseneca.ca
+* Date of Completion: 6/20/2018
+**********************************************************/
+1. The operator+ returns a Fraction object. Explain why this operator should not return a reference to a Fraction object.
+In the Fraction header file, in the declaration of operator+, the return type is defined without ampersand.
+It means, we need to return object rather than reference.
+
+2. List the temporary objects in the tester module.
+The temporary objects in my code are a, b, c, d, e. These are all static memory allocated variable so that If the code is finished, they returns the control to the operation system.
+
+3. List the simplifications that you made to your class to minimize duplication.
+Using isEmpty() function whenever we need to judge our objects are empty, it minimized duplication and make our code more readable.
+
+4. Explain what you have learned in this workshop.
+By using multiple operator, I could have learned about how to use operator more. At first, I didn't know how to use it because of suffer understanding, but it was an opportunity to accumulate knowledge about operator through experience.
