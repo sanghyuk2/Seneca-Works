@@ -1,0 +1,26 @@
+/**********************************************************
+* Name: SangHyuk Lee
+* Student ID: 129405171
+* Seneca email: slee395@myseneca.ca
+* Date of Completion: 7/31/2018
+**********************************************************/
+1. What happens if you try to put your templated functions in Data.cpp? Does your source code compile if you move all functions to Data.h? Explain.
+"unresolved external symbol" will show up as I put every template implementation.
+Yes it does compile perfectly. The template implementation will be executing during compile time for each client type from header file.
+If there is a specific type in the .cpp file, it will look up the template from header and then execute with that specific type.
+
+2. Move one templated function into ws9_lab.cpp. Does it work now? Do you need to define the template function above main(), before it is used, or can you define it below main()?
+Basically, including header is same as copy the code so it works in that way. However it should be above the main() function because the compiler reads the code from top to bottom.
+ Otherwise, the main() function cannot get the information what the user want.  
+
+3. Could you have done this lab without templates, by just overloading your functions in Data.h to accept integer and double arguments? What is the advantage of using templates?
+I can do it without templates. It works exactly same except that the difference of parameters in the functions. It seems to make duplicate functions. However, If we use the template, we do not need to make same function twice.
+
+4. Are the following equivalent? 
+template<class T>
+template<typename T>
+
+Yes. The following examples are equivalent to one another. They basically are interchangeable in the basic case. 
+However, there are specific cases where is a difference between typename and class. Typename is used to declare when you are referencing a nested type that depends on another template parameter.
+Additionally, when the user is specifying a template template, the class keyword must be used as above. In this case, the typename and the class are not interchangeable.
+
