@@ -1,0 +1,27 @@
+/**********************************************************
+ * Name: Lee Sang Hyuk
+ * Student ID: 129405171
+ * Seneca email: slee395@myseneca.ca
+ * Date of Completion: 5/22/2018
+ **********************************************************/
+
+1. What is a namespace? Explain its purpose.
+The namespace is the user specified scope that user can type the variables or objects in it. It has a significant advantage when lots of developers engage in one big project.
+As there are many programmers, there is a possibility that the variable name can be same. To avoid that situation, If we use the namespace, we do not need to worry about variables being overlapped.
+
+2. Why are header files needed? Explain.
+The header file is used to store a prototype of functions. By storing the prototypes of our frequently used functions in one header file, we do not have to declare the functions each time. In other words, the header file makes code more easy to edit, and see.
+
+3. In the instructions above, you were directed to compile only .cpp files but not the .h files.
+Explain why you should never compile header files.
+The header file is included in the process named preprocessor. The header files are intended to be included in implementation file, and cannot be compiled by compiler as a independent translation unit. Furthermore, since the header file is used to contain only the declaration, if the header file is compiled, it cannot produce any practical thing to user.
+
+4. Explain why you should never include .cpp files in another file.
+The role of the ‘include’ is literally including all the contents of the file. Therefore if we include cpp file in another file, there should be a problem. For example, in the function named ‘foo’ has its own instructions in it, and there is a main file separately, but in the same source file category. If we include the foo function in the main file, and we call the function foo in the main, there is a problem of double definitions. As a result, the compiler will complain about the foo function’s definitions duplicated. Additionally, there is a one definition rule explaining there can be exist only one definition in one scope.
+
+5. Explain in your own words what have you learned on this workshop.
+What I learned from this workshop is how to use the namespace and its use. By using the namespace included in the header file, we do not need to worry about our variable being overwritten by another variable made by another developer. After I have done the workshop, I realize its importance.
+
+Quiz 3 Reflection:
+A reference is an alias for a variable or object. The reference is used as an alternative way of pass-by-address in C language mechanism.
+Like the pass-by-address change the argument's value, the pass-by-reference also change the value of the arguments, bun in more readable way. 
