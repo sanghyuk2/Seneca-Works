@@ -1,0 +1,10 @@
+
+In line number 2 of your output:
+The output should be:
+Testing Error State Module
+But your output is: 
+Testing Error State Modul
+                         ^
+-------------------------|
+Professor's character ASCII code: hex(65), dec(101)
+un-matched character ASCII code: hex(0), dec(0)
