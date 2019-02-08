@@ -1,0 +1,8 @@
+1.What do think is the most important thing you learned in this workshop?
+A1. I learned that if we miss only one character such as number or even one letter, the compiler will be wrong. And to perform the code, we should put proper number in proper form(int, float, doulbe, char)
+2.Why must you add .005 to the value derived when calculating the GST owing?
+A2. The reason for adding .005 is to prevent rounding off to the nearest integer being wrong. In other words, preventing possibily of caculating rounding off. 
+3.What is the result of casting operation?
+A3. Changing the form to the appropriate form to caculate.
+4.Why do you think you were required to use the modulus operator in this workshop?
+A4. To explain why based on my coding, in the dimes section it can be caused balance owing as a 0. For making sure we use modulus.
