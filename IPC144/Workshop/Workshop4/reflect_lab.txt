@@ -1,0 +1,15 @@
+Name: Lee Sang Hyuk
+Student Number: 129405171
+Section: IPC144_CPA
+
+
+1) Name all the iteration constructs.
+A1. There are three iteration constructs named for, while, do while.
+
+2) In two or three sentences explain the difference between a "do while" and a "while" loop?
+A2. The diffrences between a "do while" and a "while" loops are in "while" loop, the sequence follows after the condition is met. On the other hand, in "do while" loop the sequence executes once before checking the condition.
+
+3) In two or three sentences explain what is meant by the term conditional expression? 
+A3. 'condition ? operand : operand' it is one of the examples of conditional expression which is used to select one of two epressions so it is consist of a condtion and two sub - expression. 
+ If the condition is true, the operand between ? and : will be executed, otherwise the operand following : will be executed.
+

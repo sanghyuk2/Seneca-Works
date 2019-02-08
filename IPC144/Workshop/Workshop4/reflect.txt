@@ -1,0 +1,21 @@
+1. In one or two sentences explain why the arrays in this program have to be declared to hold 10 elements?
+
+Answer) Because the range of day is between 3 to 10, we need to prepare 10 elements to prevent from accidents when we type 10 at first instead of 4.
+
+
+2. In two or three sentences explain the advantages and disadvantages using matching arrays?
+
+Answer) 
+
+Advantages a) By using array, we don't need to declare many variables. In other words, it is used to represent various data items of same type by using only single name.
+
+	   b) While iterating, it helped me a lot in terms of speed.
+
+Disadvantages a) Based on my experience, it was hard to find the specific one that i stored in array.
+	      
+              b) We cannot re-declare the size we decided. In the process it may bother us when we want to insert more number of records than declared. 
+
+
+3. Was the at home portion of this workshop too easy, just right ro too hard? Why?
+
+Answer) For me, to be honest, it was literally hard for me. It took almost 3~4 hours to make it. One of the hardest one is arrangement of the code becaue the code is sensitive, if I put my code in wrong place, it will conduct in a wrong sequence.  
