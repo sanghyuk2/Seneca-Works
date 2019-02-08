@@ -1,0 +1,2 @@
+icp144 Lee Sang Hyuk student number 129405171
+The one that I have learned from the class is programming code is very sensitive work. If you miss one letter or write wrong word, for example, stdio to studio, it can cause your code destroyed. Please be carefull about your letter sanghyuk! 
